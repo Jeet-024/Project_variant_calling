@@ -1,0 +1,8 @@
+Methodology
+1.	Download reference genome in FASTA format assembled genome of Escherichia coli.
+
+2.	Download the reads (forward and reverse) for using them against the reference genome. They should be in FASTQ format.
+3.	Run indexing of reference genome using bowtie2 tool.
+4.	Use bowtie2 to assemble the reads.
+5.	Run samtools package to create the bam file and sort the file as well.
+6.	Then run bcftools for variant calling (creating vcf file with all variants listed with reference to the reference genome) 
